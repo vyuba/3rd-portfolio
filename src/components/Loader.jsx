@@ -30,9 +30,9 @@ const LoaderPage = () => {
 
   return (
     <div className="w-screen bg-black   h-screen fixed z-[100000] overflow-hidden flex loader-text loader-page flex-row ">
-        <div className='self-center justify-self-center text-center'>
-            <h1>welcome</h1>
-            <p>alexander preye portfolio</p>
+        <div className='self-center absolute inset-0 justify-self-center text-center'>
+            <h1 className='text-5xl uppercase'>welcome</h1>
+            <p className='capitalize'>alexander preye portfolio</p>
         </div>
       <div className="loader-numbers text-[110px] font-bold self-end  flex flex-row overflow-hidden  h-[130px] ml-4 mb-20">
         <div className="flex flex-col items-center   first-row w-fit loader-text">
