@@ -4,7 +4,7 @@ const data = [
         name: 'Deeds',
         details: 'shopify store',
         stack: 'html, css, liquid',
-        link: 'deeedsmag.store',
+        link: 'https://www.deedsmag.store',
         images: '/test/DEEDS-WED.jpg',
         projectType: 'client',
         workType: 'development',
