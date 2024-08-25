@@ -103,7 +103,7 @@ function Portfolio() {
         <div className="sidebar overflow-y-auto px-3 py-3 pb-3">
         <h1 className="capitalize font-bold text-xl sticky top-0 bg-black py-2 w-full">about me</h1>
             <p>
-            Navigating the realms of product design and web development, every meticulous stride signifies progress – Baby steps paving the path to digital brilliance.
+            Navigating the realms of product design and web development, every meticulous stride signifies progress and also interest in web3, crypto - Baby steps paving the path to digital brilliance.
             </p>
             <div className="pt-4">
             <h6 className="text-lg capitalize">skills:</h6>
@@ -135,7 +135,8 @@ function Portfolio() {
             <div className="px-3 py-3 h-full overflow-x-auto flex flex-col gap-3">
             {
                     filteredData.map((item) => (
-                        <div key={item.id} className="border-solid border-[2px] border-[#1E1E1E] w-full h-[300px] rounded-lg flex flex-col overflow-hidden">  
+                        <a href={item.link} key={item.id}>
+                        <div  className="border-solid border-[2px] border-[#1E1E1E] w-full h-[300px] rounded-lg flex flex-col overflow-hidden">  
                             <div style={{backgroundImage: `url(${item.images})`}} className="bg-white flex-1 bg-cover bg-center">
                             </div>
                             <div className="bg-black h-20 px-2 py-3">
@@ -148,6 +149,8 @@ function Portfolio() {
                                 <p className="capitalize text-[14px]">{item.details} - {item.stack}</p>
                             </div>
                         </div>
+                            
+                        </a>
                     ))
                 }
             </div>
